@@ -60,32 +60,15 @@ nav{
     width: 100%;
 }
 
+.main1 img{
+    width: 100%;
+}
+
 .Roosters {
     font-size: 30px;
     padding: 20px;
     margin: 30px;
     display: flex;
-}
-
-@media only screen and (max-width: 780px) {
-    .Roosters{
-        flex-direction: column;
-    }
-
-    .main1, .main2{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .row2 {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .nav {
-        display: none;
-    }
 }
     
 
@@ -150,10 +133,48 @@ p {
     text-align: center;
     padding: 15px;
 }
-
-.m1 img{
-    width: 50%;
-}
 .Versnellen h1 {
     font-size: 45px;
+}
+
+.Versnellen{
+    display: flex;
+    flex-direction: row;
+}
+
+.center-text {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.center-text p {
+    margin-top: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+    .Roosters, .Versnellen{
+        flex-direction: column;
+    }
+    .main1, .main2{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .row2 {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
 }
